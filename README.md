@@ -37,4 +37,4 @@ make -j
 
 ### Output csv files of the simulation
 - output0_gerdaSetup_16x16x20_musun_nt_GadoliniumHits.csv
-- output0_gerdaSetup_16x16x20_musun_nt_GermaniumHits.csv
+- output0_gerdaSetup_16x16x20_musun_nt_sensitiveDetectorHits.csv
