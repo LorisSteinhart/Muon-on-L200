@@ -35,7 +35,7 @@ void MyRunAction::BeginOfRunAction(const G4Run* run){
     nGd = 0;
     nWat = 0;
     nspSD = 0;
-    man->OpenFile("output"+strRunID.str()+"_gerdaSetup_16x16x20_musun.csv");
+    man->OpenFile("output1"+strRunID.str()+"_gerdaSetup_16x16x20_musun.csv");
 }
 
 void MyRunAction::EndOfRunAction(const G4Run*){
