@@ -19,10 +19,8 @@ The simulation allows for:
 ### Prerequisites
 
 - CMake ≥ 3.16
-- ROOT ≥ 6.22
 - GEANT4 (with GDML support)
 - Python 3 (for post-processing)
-- MUSUN (optional, for muon input generation)
 
 ### Build the simulation
 
