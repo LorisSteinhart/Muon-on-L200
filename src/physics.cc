@@ -27,17 +27,9 @@
 #include "Shielding.hh"
 #include "RMGNeutronCaptureProcess.hh"
 
-// MyPhysicsList::MyPhysicsList(){
-//     RegisterPhysics(new G4EmStandardPhysics()); /* Adds electromagnetic interaction*/
-//     RegisterPhysics(new G4OpticalPhysics());
-// }
-
 
 MyPhysicsList::MyPhysicsList() {
-    // RegisterPhysics(new G4EmStandardPhysics()); /* Adds electromagnetic interaction*/
-    // auto *hPhysics = new G4HadronPhysicsShielding();
-    // hPhysics->ConstructProcess();
-    // RegisterPhysics(new G4HadronPhysicsShielding());
+  
 
     this->DefineCommands();
 }
@@ -146,45 +138,7 @@ MyPhysicsList::~MyPhysicsList() {
 
 void MyPhysicsList::DefineCommands() {
     fMessenger = std::make_unique<G4GenericMessenger>(this, "/RMG/Processes/", "Commands for controlling physics processes");
-//   fMessenger->DeclareMethod("Realm", &RMGPhysics::SetPhysicsRealmString)
-//       .SetGuidance("Set simulation realm (cut values for particles in (sensitive) detector")
-//       .SetParameterName("realm", false)
-//       .SetCandidates(RMGTools::GetCandidates<PhysicsRealm>())
-//       .SetStates(G4State_PreInit, G4State_Idle);
-//   fMessenger->DeclareProperty("OpticalPhysics", fConstructOptical)
-//       .SetGuidance("Add optical processes to the physics list")
-//       .SetStates(G4State_PreInit);
-//   fMessenger->DeclareMethod("LowEnergyEMPhysics", &RMGPhysics::SetLowEnergyEMOptionString)
-//       .SetGuidance("Add low energy electromagnetic processes to the physics list")
-//       .SetCandidates(RMGTools::GetCandidates<LowEnergyEMOption>())
-//       .SetDefaultValue(RMGTools::GetCandidate(LowEnergyEMOption::kLivermore))
-//       .SetStates(G4State_PreInit);
-//   fMessenger->DeclareMethod("HadronicPhysics", &RMGPhysics::SetHadronicPhysicsListOptionString)
-//       .SetGuidance("Add hadronic processes to the physics list")
-//       .SetCandidates(RMGTools::GetCandidates<HadronicPhysicsListOption>())
-//       .SetDefaultValue(RMGTools::GetCandidate(HadronicPhysicsListOption::kShielding))
-//       .SetStates(G4State_PreInit);
-//   // TODO: upstream bug with bools in G4GenericMessenger (only numeric values work).
-//   fMessenger->DeclareMethod("ThermalScattering", &RMGPhysics::SetUseThermalScattering)
-//       .SetGuidance("Use thermal scattering cross sections for neutrons")
-//       .SetCandidates("0 1")
-//       .SetStates(G4State_PreInit);
-//   // TODO: upstream bug with bools in G4GenericMessenger (only numeric values work).
-//   fMessenger->DeclareMethod("EnableGammaAngularCorrelation", &RMGPhysics::SetUseGammaAngCorr)
-//       .SetGuidance("Set correlated gamma emission flag")
-//       .SetCandidates("0 1")
-//       .SetStates(G4State_PreInit);
-//   fMessenger->DeclareMethod("GammaTwoJMAX", &RMGPhysics::SetGammaTwoJMAX)
-//       .SetGuidance("Set max 2J for sampling of angular correlations")
-//       .SetParameterName("x", false)
-//       .SetRange("x > 0")
-//       .SetStates(G4State_PreInit);
-//   // TODO: upstream bug with bools in G4GenericMessenger (only numeric values work).
-//   fMessenger->DeclareMethod("StoreICLevelData", &RMGPhysics::SetStoreICLevelData)
-//       .SetGuidance("Store e- internal conversion data")
-//       .SetCandidates("0 1")
-//       .SetStates(G4State_PreInit);
-    
+
 
   fMessenger->DeclareProperty("UseGrabmayrsGammaCascades", fUseGrabmayrGammaCascades)
       .SetGuidance("Use custom RMGNeutronCapture to apply Grabmayrs gamma cascades.")
