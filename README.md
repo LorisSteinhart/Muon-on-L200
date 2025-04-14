@@ -5,11 +5,11 @@ This repository contains the full simulation framework used in the study of neut
 
 ## Overview
 
-The simulation is based on a GEANT4-based geometry implemented in the REBOOST framework. It includes a detailed model of the modified L200 setup used as a stand-in for the original GERDA detector configuration. A dedicated Gd-loaded string is placed at the center to study the capture of thermalized neutrons and their impact on detector backgrounds.
+The simulation is based on a GEANT4-based geometry. It includes a detailed model of the modified L200 setup used as a stand-in for the original GERDA detector configuration. A dedicated Gd-loaded string is placed at the center to study the capture of thermalized neutrons and their impact on detector backgrounds.
 
 The simulation allows for:
 
-- Muon-induced neutron generation using [MUSUN](https://github.com/legend-exp/musun)
+- Muon-induced neutron generation using MUSUN files
 - Detailed tracking of neutron interactions and capture processes
 - Energy deposition analysis in HPGe detectors
 - Time-resolved coincidence analysis between muon veto and Ge events
