@@ -1,4 +1,3 @@
-# Muon-on-L200
 # Gd Neutron Flux Simulation for GERDA (PGT Setup)
 
 This repository contains the full simulation framework used in the study of neutron flux in the Post-GERDA-Test-Setup (PGT), focusing on neutron capture events on natural Gadolinium within a high-purity germanium detector environment.
@@ -34,5 +33,9 @@ The simulation allows for:
 mkdir build && cd build
 cmake ..
 make -j
-./sim run.mac
+```
 
+### Build
+```bash
+./sim run.mac
+```
