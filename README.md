@@ -1,1 +1,38 @@
 # Muon-on-L200
+# Gd Neutron Flux Simulation for GERDA (PGT Setup)
+
+This repository contains the full simulation framework used in the study of neutron flux in the Post-GERDA-Test-Setup (PGT), focusing on neutron capture events on natural Gadolinium within a high-purity germanium detector environment.
+
+## Overview
+
+The simulation is based on a GEANT4-based geometry implemented in the REBOOST framework. It includes a detailed model of the modified L200 setup used as a stand-in for the original GERDA detector configuration. A dedicated Gd-loaded string is placed at the center to study the capture of thermalized neutrons and their impact on detector backgrounds.
+
+The simulation allows for:
+
+- Muon-induced neutron generation using [MUSUN](https://github.com/legend-exp/musun)
+- Detailed tracking of neutron interactions and capture processes
+- Energy deposition analysis in HPGe detectors
+- Time-resolved coincidence analysis between muon veto and Ge events
+- Estimation of signal-to-background ratios and neutron flux
+
+## Structure
+
+
+## How to Run
+
+### Prerequisites
+
+- CMake ≥ 3.16
+- ROOT ≥ 6.22
+- GEANT4 (with GDML support)
+- Python 3 (for post-processing)
+- MUSUN (optional, for muon input generation)
+
+### Build
+
+```bash
+mkdir build && cd build
+cmake ..
+make -j
+./sim run.mac
+
