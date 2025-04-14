@@ -14,9 +14,6 @@ The simulation allows for:
 - Time-resolved coincidence analysis between muon veto and Ge events
 - Estimation of signal-to-background ratios and neutron flux
 
-## Structure
-
-
 ## How to Run
 
 ### Prerequisites
@@ -27,7 +24,7 @@ The simulation allows for:
 - Python 3 (for post-processing)
 - MUSUN (optional, for muon input generation)
 
-### Build
+### Build the simulation
 
 ```bash
 mkdir build && cd build
@@ -35,7 +32,11 @@ cmake ..
 make -j
 ```
 
-### Build
+### Run the simulation
 ```bash
 ./sim run.mac
 ```
+
+### Output csv files of the simulation
+- output0_gerdaSetup_16x16x20_musun_nt_GadoliniumHits.csv
+- output0_gerdaSetup_16x16x20_musun_nt_GermaniumHits.csv
