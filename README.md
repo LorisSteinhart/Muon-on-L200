@@ -21,6 +21,8 @@ The simulation allows for:
 - CMake ≥ 3.16
 - GEANT4 (with GDML support)
 - Python 3 (for post-processing)
+- MUSUN file (https://doi.org/10.1016/j.cpc.2008.10.013)
+- Gamma cascades in gadolinium isotopes from Peter Gramayr (Link missing)
 
 ### Build the simulation
 
