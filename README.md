@@ -22,7 +22,7 @@ The simulation allows for:
 - GEANT4 (with GDML support)
 - Python 3 (for post-processing)
 - MUSUN file (https://doi.org/10.1016/j.cpc.2008.10.013)
-- Gamma cascades in gadolinium isotopes from Peter Gramayr (Link missing)
+- Gamma cascades in gadolinium isotopes from Peter Gramayr (https://zenodo.org/records/7458654)
 
 ### Build the simulation
 
