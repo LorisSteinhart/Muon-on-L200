@@ -1,0 +1,46 @@
+#/RMG/Manager/Logging/LogLevel summary
+
+#/tracking/verbose 2
+
+#/RMG/Processes/HadronicPhysics Shielding
+#/RMG/Processes/ThermalScattering 1
+#/RMG/Processes/UseGrabmayrsGammaCascades true
+
+#/RMG/Output/ActivateOutputScheme IsotopeOutputScheme
+
+/RMG/GrabmayrGammaCascades/SetGammaCascadeFile 64 155 156Gd-5keV-cascades.txt
+/RMG/GrabmayrGammaCascades/SetGammaCascadeFile 64 157 158Gd-5keV-cascades.txt
+/RMG/GrabmayrGammaCascades/SetGammaCascadeRandomStartLocation 1
+/run/initialize
+
+#/RMG/Output/NtuplePerDetector false
+#/RMG/Output/FileName Custom.root
+
+#/RMG/Generator/Select GPS
+#/gps/particle neutron
+#/gps/ang/type iso
+#/gps/energy 0.5 MeV
+
+#/RMG/Processes/Realm CosmicRays
+
+#/random/setSeeds 12345 67890
+#/run/beamOn 10000000
+#/random/setSeeds 25347 47790
+#/run/beamOn 10000000
+#/random/setSeeds 35347 17790
+#/run/beamOn 10000000
+#/random/setSeeds 65347 57790
+#/run/beamOn 10000000
+#/random/setSeeds 75347 27790
+#/run/beamOn 10000000
+
+#/random/setSeeds 42345 67890
+#/run/beamOn 10000000
+#/random/setSeeds 45347 47790
+#/run/beamOn 10000000
+#/random/setSeeds 75647 17790
+#/run/beamOn 10000000
+#/random/setSeeds 65447 57790
+#/run/beamOn 10000000
+/random/setSeeds 75447 27790
+/run/beamOn 10000000
